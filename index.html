@@ -29,8 +29,17 @@
             transition: all 0.3s ease;
         }
         .cta-button:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Keep hover scale effect */
             box-shadow: 0 0 15px rgba(218, 165, 32, 0.7); /* Gold shadow */
+        }
+        /* Specific style for the hero CTA button for overlap */
+        .cta-button-overlap {
+            /* Adjust hover effect for positioned button */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-button-overlap:hover {
+             transform: translate(-50%, -5px) scale(1.05);
+             box-shadow: 0 0 15px rgba(218, 165, 32, 0.7); /* Ensure shadow is consistent */
         }
         /* Simple gradient for hero */
         .hero-gradient {
@@ -45,42 +54,49 @@
         }
         /* Hero image style (large version) */
         .hero-image-large {
-             max-height: 500px; /* Adjust max height as needed */
+             max-height: 600px; /* Increased image max height */
              width: 100%;
-             object-fit: contain; /* Contain ensures the whole image fits */
-             object-position: center; /* Center the image */
+             object-fit: contain;
+             object-position: center;
         }
-        /* Logo style - Increased size */
+        /* Logo style */
         .hero-logo {
-            max-width: 280px; /* Increased logo size */
+            max-width: 280px;
             height: auto;
-            margin-bottom: 1.5rem; /* Space below logo */
+            margin-bottom: 1.5rem;
+        }
+        /* Ensure button is visible above image */
+        .z-10 {
+            z-index: 10;
         }
     </style>
 </head>
 <body class="antialiased">
 
-    <section class="hero-gradient py-16 md:py-24 rounded-b-lg">
+    <section class="hero-gradient pt-16 md:pt-24 pb-24 md:pb-32 rounded-b-lg">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-2/5 text-center md:text-left flex flex-col items-center md:items-start">
                     <img src="https://i.ibb.co/SXySv4Jh/1.png" alt="Logo Marketing Jurídico" class="hero-logo" onerror="this.style.display='none'">
-
                     <h1 class="text-3xl md:text-4xl lg:text-5xl font-black mb-4 gold-text leading-tight">
                         Domine o Marketing Jurídico e Atraia os Clientes que Você Merece
                     </h1>
-                    <p class="text-lg md:text-xl mb-8 text-gray-300">
+                    <p class="text-lg md:text-xl text-gray-300">
                         O Ecossistema Completo para Advogados que Buscam Posicionamento Estratégico, Visibilidade Online e um Fluxo Constante de Clientes Qualificados.
                     </p>
-                    <a href="#inscricao" class="cta-button inline-block gold-bg text-black font-bold py-4 px-10 rounded-lg text-xl shadow-lg mb-4">
-                        Quero Transformar minha Advocacia Agora!
-                    </a>
-                    <p class="text-sm text-gray-400">Vagas limitadas para a próxima turma!</p>
                 </div>
-                <div class="md:w-3/5 flex justify-center md:justify-end">
+                <div class="md:w-3/5 flex flex-col items-center mt-8 md:mt-0 relative">
                    <img src="https://rossiadvocacia.com/wp-content/uploads/2023/12/e5b68286-b.png"
                         alt="Advogado Dr. Rossi - Marketing Jurídico"
-                        class="hero-image-large rounded-lg shadow-lg" onerror="this.src='https://placehold.co/600x400/333333/DAA520?text=Imagem+Indisponível'">
+                        class="hero-image-large rounded-lg shadow-lg w-full"
+                        onerror="this.src='https://placehold.co/600x400/333333/DAA520?text=Imagem+Indisponível'">
+                   <div class="relative w-full flex justify-center mt-[-40px] md:mt-[-50px] z-10">
+                       <a href="#inscricao"
+                          class="cta-button cta-button-overlap gold-bg text-black font-bold py-4 px-10 rounded-lg text-xl shadow-lg w-auto whitespace-nowrap">
+                            Quero Transformar minha Advocacia Agora!
+                       </a>
+                   </div>
+                   <p class="text-sm text-gray-400 mt-4 z-10 relative">Vagas limitadas para a próxima turma!</p>
                 </div>
             </div>
         </div>
@@ -119,17 +135,17 @@
                     <h3 class="text-xl font-bold mb-3 gold-text">Posicionamento de Autoridade</h3>
                     <p class="text-gray-400">Defina seu nicho, construa sua marca pessoal e comunique seu valor de forma clara e eficaz para se destacar no mercado jurídico.</p>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
+                 <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
                     <i class="fab fa-google text-3xl gold-text mb-4"></i>
                     <h3 class="text-xl font-bold mb-3 gold-text">Dominando o Google</h3>
                     <p class="text-gray-400">Entenda como funciona o Google Meu Negócio, SEO local e estratégias para ser encontrado por quem busca seus serviços jurídicos na sua região.</p>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
+                 <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
                     <i class="fas fa-file-alt text-3xl gold-text mb-4"></i>
                     <h3 class="text-xl font-bold mb-3 gold-text">Marketing de Conteúdo</h3>
                     <p class="text-gray-400">Produza artigos, vídeos e materiais relevantes que educam seu público, geram confiança e atraem leads qualificados de forma orgânica.</p>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
+                 <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
                     <i class="fas fa-tools text-3xl gold-text mb-4"></i>
                     <h3 class="text-xl font-bold mb-3 gold-text">Ferramentas e Métricas</h3>
                     <p class="text-gray-400">Conheça e utilize as ferramentas essenciais para gerenciar seu marketing e mensurar seus resultados, tomando decisões baseadas em dados.</p>
@@ -144,19 +160,19 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gold-text">Advogados que Transformaram suas Carreiras</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md text-center">
+                 <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md text-center">
                     <img src="https://placehold.co/100x100/333333/DAA520?text=Advogado+1" alt="Foto do Advogado 1" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 gold-border" onerror="this.src='https://placehold.co/100x100/333333/DAA520?text=Foto'">
                     <p class="text-gray-400 mb-4 italic">"Depois do curso, minha agenda lotou! Aprendi a usar o Google Ads de forma eficiente e hoje tenho um fluxo constante de clientes para minha área."</p>
                     <p class="font-bold gold-text">- Nome do Advogado 1</p>
                     <p class="text-sm text-gray-500">Advocacia [Área], [Cidade]</p>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md text-center">
+                 <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md text-center">
                     <img src="https://placehold.co/100x100/444444/DAA520?text=Advogada+2" alt="Foto da Advogada 2" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 gold-border" onerror="this.src='https://placehold.co/100x100/444444/DAA520?text=Foto'">
                     <p class="text-gray-400 mb-4 italic">"Eu não sabia por onde começar nas redes sociais. O curso me deu o passo a passo para construir minha autoridade online e hoje sou referência no meu nicho."</p>
                     <p class="font-bold gold-text">- Nome da Advogada 2</p>
                     <p class="text-sm text-gray-500">Advocacia [Área], [Cidade]</p>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md text-center">
+                 <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md text-center">
                     <img src="https://placehold.co/100x100/555555/DAA520?text=Advogado+3" alt="Foto do Advogado 3" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 gold-border" onerror="this.src='https://placehold.co/100x100/555555/DAA520?text=Foto'">
                     <p class="text-gray-400 mb-4 italic">"O módulo de posicionamento foi um divisor de águas. Consegui definir meu público ideal e aumentar o valor dos meus honorários significativamente."</p>
                     <p class="font-bold gold-text">- Nome do Advogado 3</p>
@@ -174,14 +190,13 @@
             <p class="text-lg md:text-xl mb-8 text-gray-300 max-w-3xl mx-auto">
                 Tenha acesso vitalício a todo o conteúdo, aulas práticas, materiais de apoio, comunidade exclusiva e atualizações constantes.
             </p>
-
             <div class="max-w-md mx-auto bg-gray-800 rounded-lg shadow-xl p-8 border-2 gold-border mb-10">
                 <h3 class="text-2xl font-bold mb-4 gold-text">Acesso Completo ao Ecossistema</h3>
-                <p class="text-gray-400 line-through mb-2">De R$ 1.997,00</p>
-                <p class="text-5xl font-black gold-text mb-4">
-                    Por 12x R$ 99,70
+                <p class="text-gray-400 line-through mb-1">De R$ 597,00</p>
+                <p class="text-5xl font-black gold-text mb-2">
+                    Por R$ 197,00
                 </p>
-                <p class="text-gray-400 mb-6">Ou R$ 997,00 à vista</p>
+                <p class="text-green-400 font-bold mb-6">Desconto de 67%!</p>
                 <ul class="text-left text-gray-300 space-y-2 mb-8">
                     <li class="flex items-center"><i class="fas fa-check-circle gold-text mr-2"></i> Módulos Completos (Tráfego, Social Media, etc.)</li>
                     <li class="flex items-center"><i class="fas fa-check-circle gold-text mr-2"></i> Aulas 100% Online e Gravadas</li>
@@ -197,7 +212,6 @@
                 </a>
                 <p class="text-sm text-gray-500">Compra segura e garantia de 7 dias.</p>
             </div>
-
             <div class="mt-12">
                  <p class="text-xl font-bold text-red-500 animate-pulse">
                     ⚠️ Atenção: Bônus exclusivos e valor promocional por tempo limitado! ⚠️
