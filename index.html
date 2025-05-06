@@ -1,133 +1,212 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agência Logo Advocacia - Identidade Visual para Advogados [Verificar Título no Site Real]</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Ecossistema de Marketing para Advogados - Conquiste Clientes Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111111; /* Dark background */
+            color: #E5E7EB; /* Light gray text */
+            /* Removed padding-top as header is removed */
+        }
+        .gold-text {
+            color: #DAA520; /* Gold color */
+        }
+        .gold-bg {
+            background-color: #DAA520; /* Gold color */
+        }
+        .gold-border {
+            border-color: #DAA520; /* Kept for testimonials, removed from hero image */
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(218, 165, 32, 0.7); /* Gold shadow */
+        }
+        /* Simple gradient for hero */
+        .hero-gradient {
+            background: linear-gradient(180deg, #1a1a1a 0%, #111111 100%);
+        }
+        /* Section separator */
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #DAA520, transparent);
+            margin: 4rem auto;
+            width: 50%;
+        }
+        /* Hero image style (large version) */
+        .hero-image-large {
+             max-height: 500px; /* Adjust max height as needed */
+             width: 100%;
+             object-fit: contain; /* Contain ensures the whole image fits */
+             object-position: center; /* Center the image */
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased">
 
-    <header>
-        <nav>
-            <div class="logo">[Logo ou Nome "Logo Advocacia"]</div>
-            <ul>
-                <li><a href="#sobre-nos">[Nome da Seção Sobre]</a></li>
-                <li><a href="#portfolio">[Nome da Seção Portfólio]</a></li>
-                <li><a href="#pacotes">[Nome da Seção Serviços/Planos]</a></li>
-                <li><a href="#depoimentos">[Nome da Seção Depoimentos]</a></li>
-                <li><a href="#contato">[Nome da Seção Contato]</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="sobre-nos" class="secao">
-        <div class="container">
-            <h2>[Título da Seção Sobre Nós do Site Real]</h2>
-            <p>[Parágrafo 1 da descrição da agência do site real...]</p>
-            <p>[Parágrafo 2 da descrição, falando sobre especialização em advocacia, missão, etc...]</p>
-        </div>
-    </section>
-
-    <section id="portfolio" class="secao section-alt">
-        <div class="container">
-             <h2>[Título da Seção Portfólio do Site Real]</h2>
-            <p>[Texto introdutório da seção Portfólio do site real...]</p>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="[caminho/imagem_portfolio_1.jpg]" alt="[Descrição do Projeto 1 - Ex: Logo para Escritório X]">
-                    <h3>[Nome do Cliente ou Projeto 1]</h3>
-                    <p>[Breve descrição do trabalho realizado - Ex: Criação de logo e identidade visual]</p>
+    <section class="hero-gradient py-16 md:py-24 rounded-b-lg">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-2/5 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-4 gold-text leading-tight">
+                        Domine o Marketing Jurídico e Atraia os Clientes que Você Merece
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8 text-gray-300">
+                        O Ecossistema Completo para Advogados que Buscam Posicionamento Estratégico, Visibilidade Online e um Fluxo Constante de Clientes Qualificados.
+                    </p>
+                    <a href="#inscricao" class="cta-button inline-block gold-bg text-black font-bold py-4 px-10 rounded-lg text-xl shadow-lg mb-4">
+                        Quero Transformar minha Advocacia Agora!
+                    </a>
+                    <p class="text-sm text-gray-400">Vagas limitadas para a próxima turma!</p>
                 </div>
-                 <div class="portfolio-item">
-                    <img src="[caminho/imagem_portfolio_2.jpg]" alt="[Descrição do Projeto 2]">
-                    <h3>[Nome do Cliente ou Projeto 2]</h3>
-                    <p>[Breve descrição do trabalho realizado]</p>
-                </div>
-                </div>
-        </div>
-    </section>
-
-    <section id="pacotes" class="secao">
-        <div class="container">
-             <h2>[Título da Seção Serviços/Planos do Site Real]</h2>
-            <p>[Texto introdutório da seção Serviços/Planos do site real...]</p>
-            <div class="pacotes-grid">
-                 <div class="pacote-item">
-                    <h3>[Nome do Plano 1 do Site Real]</h3>
-                    <ul>
-                        <li>[Item 1 do Plano 1]</li>
-                        <li>[Item 2 do Plano 1]</li>
-                        <li>[Item 3 do Plano 1]</li>
-                        </ul>
-                    <p class="preco">[Preço ou "Consulte"]</p>
-                    <a href="#contato" class="btn">[Texto do Botão - Ex: "Solicitar Orçamento", "Saiba Mais"]</a>
-                </div>
-                 <div class="pacote-item">
-                    <h3>[Nome do Plano 2 do Site Real]</h3>
-                    <ul>
-                        <li>[Item 1 do Plano 2]</li>
-                        <li>[Item 2 do Plano 2]</li>
-                        </ul>
-                    <p class="preco">[Preço ou "Consulte"]</p>
-                    <a href="#contato" class="btn">[Texto do Botão]</a>
-                </div>
-                </div>
-        </div>
-    </section>
-
-    <section id="depoimentos" class="secao section-alt">
-        <div class="container">
-             <h2>[Título da Seção Depoimentos do Site Real]</h2>
-            <p>[Texto introdutório da seção Depoimentos do site real...]</p>
-            <div class="depoimento-item">
-                <blockquote>
-                   "[Texto do depoimento do cliente 1, copiado do site real...]"
-                </blockquote>
-                <cite>- [Nome do Cliente 1], [Cargo/Empresa, se houver]</cite>
-            </div>
-             <div class="depoimento-item">
-                <blockquote>
-                   "[Texto do depoimento do cliente 2, copiado do site real...]"
-                </blockquote>
-                <cite>- [Nome do Cliente 2], [Cargo/Empresa, se houver]</cite>
-            </div>
-            </div>
-    </section>
-
-    <section id="contato" class="secao">
-        <div class="container">
-            <h2>[Título da Seção Contato do Site Real]</h2>
-            <div class="contato-flex">
-                <div class="contato-info">
-                    <p>[Texto introdutório da seção Contato do site real...]</p>
-                    <p><i class="fas fa-phone"></i> [Telefone do site real]</p>
-                    <p><i class="fas fa-envelope"></i> [E-mail do site real]</p>
-                    <div class="redes-sociais">
-                        <a href="[Link do Instagram]" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="[Link do LinkedIn]" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="[Link do Facebook, se houver]" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                </div>
-                <div class="contato-mapa">
-                    <iframe
-                        src="[Código de incorporação do Google Maps do site real, se houver]"
-                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                <div class="md:w-3/5 flex justify-center md:justify-end">
+                   <img src="https://rossiadvocacia.com/wp-content/uploads/2023/12/e5b68286-b.png"
+                        alt="Advogado Dr. Rossi - Marketing Jurídico"
+                        class="hero-image-large rounded-lg shadow-lg" onerror="this.src='https://placehold.co/600x400/333333/DAA520?text=Imagem+Indisponível'">
                 </div>
             </div>
         </div>
     </section>
 
-    <a href="https://wa.me/[NumeroWhatsAppCompletoDoSiteReal]?text=[TextoInicialWhatsAppDoSiteReal]" class="whatsapp-button" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <section class="py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 gold-text">Sua Advocacia está Invisível no Mundo Digital?</h2>
+            <p class="text-lg md:text-xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                Muitos advogados talentosos lutam para atrair clientes porque dependem apenas de indicações ou métodos ultrapassados. Sentem-se perdidos com tráfego pago, redes sociais e Google, vendo concorrentes menos qualificados ganharem espaço online. <span class="font-bold">Chega de esperar o cliente bater na sua porta.</span>
+            </p>
+        </div>
+    </section>
 
-    <footer>
-         <p>© [Ano Atual] [Nome da Empresa como no site real]. Todos os direitos reservados.</p>
+    <div class="section-divider"></div>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gold-text">O Ecossistema Definitivo de Marketing Jurídico</h2>
+            <p class="text-lg md:text-xl mb-12 text-gray-300 text-center max-w-3xl mx-auto">
+                Reunimos TUDO que você precisa para construir uma presença online sólida e lucrativa, respeitando as normas da OAB. Desde a estratégia inicial até a gestão avançada de campanhas.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
+                    <i class="fas fa-bullseye text-3xl gold-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3 gold-text">Tráfego Pago Estratégico</h3>
+                    <p class="text-gray-400">Aprenda a criar e otimizar campanhas no Google Ads e Meta Ads (Facebook/Instagram) que atraem clientes qualificados para suas áreas de atuação, com foco em ROI.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
+                    <i class="fas fa-share-alt text-3xl gold-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3 gold-text">Social Media que Conecta</h3>
+                    <p class="text-gray-400">Desenvolva uma presença autêntica e profissional nas redes sociais, construindo autoridade e engajamento com seu público-alvo (LinkedIn, Instagram, etc.).</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
+                    <i class="fas fa-chess-king text-3xl gold-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3 gold-text">Posicionamento de Autoridade</h3>
+                    <p class="text-gray-400">Defina seu nicho, construa sua marca pessoal e comunique seu valor de forma clara e eficaz para se destacar no mercado jurídico.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
+                    <i class="fab fa-google text-3xl gold-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3 gold-text">Dominando o Google</h3>
+                    <p class="text-gray-400">Entenda como funciona o Google Meu Negócio, SEO local e estratégias para ser encontrado por quem busca seus serviços jurídicos na sua região.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
+                    <i class="fas fa-file-alt text-3xl gold-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3 gold-text">Marketing de Conteúdo</h3>
+                    <p class="text-gray-400">Produza artigos, vídeos e materiais relevantes que educam seu público, geram confiança e atraem leads qualificados de forma orgânica.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md">
+                    <i class="fas fa-tools text-3xl gold-text mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3 gold-text">Ferramentas e Métricas</h3>
+                    <p class="text-gray-400">Conheça e utilize as ferramentas essenciais para gerenciar seu marketing e mensurar seus resultados, tomando decisões baseadas em dados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="py-16 bg-gray-900 rounded-lg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gold-text">Advogados que Transformaram suas Carreiras</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md text-center">
+                    <img src="https://placehold.co/100x100/333333/DAA520?text=Advogado+1" alt="Foto do Advogado 1" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 gold-border" onerror="this.src='https://placehold.co/100x100/333333/DAA520?text=Foto'">
+                    <p class="text-gray-400 mb-4 italic">"Depois do curso, minha agenda lotou! Aprendi a usar o Google Ads de forma eficiente e hoje tenho um fluxo constante de clientes para minha área."</p>
+                    <p class="font-bold gold-text">- Nome do Advogado 1</p>
+                    <p class="text-sm text-gray-500">Advocacia [Área], [Cidade]</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md text-center">
+                    <img src="https://placehold.co/100x100/444444/DAA520?text=Advogada+2" alt="Foto da Advogada 2" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 gold-border" onerror="this.src='https://placehold.co/100x100/444444/DAA520?text=Foto'">
+                    <p class="text-gray-400 mb-4 italic">"Eu não sabia por onde começar nas redes sociais. O curso me deu o passo a passo para construir minha autoridade online e hoje sou referência no meu nicho."</p>
+                    <p class="font-bold gold-text">- Nome da Advogada 2</p>
+                    <p class="text-sm text-gray-500">Advocacia [Área], [Cidade]</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-md text-center">
+                    <img src="https://placehold.co/100x100/555555/DAA520?text=Advogado+3" alt="Foto do Advogado 3" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 gold-border" onerror="this.src='https://placehold.co/100x100/555555/DAA520?text=Foto'">
+                    <p class="text-gray-400 mb-4 italic">"O módulo de posicionamento foi um divisor de águas. Consegui definir meu público ideal e aumentar o valor dos meus honorários significativamente."</p>
+                    <p class="font-bold gold-text">- Nome do Advogado 3</p>
+                    <p class="text-sm text-gray-500">Advocacia [Área], [Cidade]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="inscricao" class="py-16 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 gold-text">Chegou a Hora de Investir no Futuro da Sua Advocacia</h2>
+            <p class="text-lg md:text-xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                Tenha acesso vitalício a todo o conteúdo, aulas práticas, materiais de apoio, comunidade exclusiva e atualizações constantes.
+            </p>
+
+            <div class="max-w-md mx-auto bg-gray-800 rounded-lg shadow-xl p-8 border-2 gold-border mb-10">
+                <h3 class="text-2xl font-bold mb-4 gold-text">Acesso Completo ao Ecossistema</h3>
+                <p class="text-gray-400 line-through mb-2">De R$ 1.997,00</p>
+                <p class="text-5xl font-black gold-text mb-4">
+                    Por 12x R$ 99,70
+                </p>
+                <p class="text-gray-400 mb-6">Ou R$ 997,00 à vista</p>
+                <ul class="text-left text-gray-300 space-y-2 mb-8">
+                    <li class="flex items-center"><i class="fas fa-check-circle gold-text mr-2"></i> Módulos Completos (Tráfego, Social Media, etc.)</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle gold-text mr-2"></i> Aulas 100% Online e Gravadas</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle gold-text mr-2"></i> Materiais Complementares (Templates, Checklists)</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle gold-text mr-2"></i> Comunidade Exclusiva de Advogados</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle gold-text mr-2"></i> Suporte para Dúvidas</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle gold-text mr-2"></i> Atualizações Constantes</li>
+                    <li class="flex items-center font-bold"><i class="fas fa-gift gold-text mr-2"></i> BÔNUS: [Inserir Bônus 1 - Ex: Aula de Copywriting Jurídico]</li>
+                    <li class="flex items-center font-bold"><i class="fas fa-gift gold-text mr-2"></i> BÔNUS: [Inserir Bônus 2 - Ex: Planilha de Métricas]</li>
+                </ul>
+                <a href="#" class="cta-button block w-full gold-bg text-black font-bold py-4 px-10 rounded-lg text-xl shadow-lg mb-4">
+                    Sim, Quero Garantir Minha Vaga!
+                </a>
+                <p class="text-sm text-gray-500">Compra segura e garantia de 7 dias.</p>
+            </div>
+
+            <div class="mt-12">
+                 <p class="text-xl font-bold text-red-500 animate-pulse">
+                    ⚠️ Atenção: Bônus exclusivos e valor promocional por tempo limitado! ⚠️
+                 </p>
+                 <p class="text-gray-400 mt-2">Não perca a chance de transformar sua advocacia com as estratégias mais eficazes do mercado.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-gray-900 text-center text-gray-500 text-sm rounded-t-lg">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2024 [Nome da Sua Empresa/Seu Nome]. Todos os direitos reservados.</p>
+            <p>Este site não faz parte nem é endossado pelo Facebook, Instagram, Google ou qualquer uma de suas entidades. FACEBOOK é uma marca comercial da META PLATFORMS, Inc. GOOGLE é uma marca comercial da GOOGLE LLC.</p>
+            </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsHo3IGjewCHJfP6dMNNvdDPZdw4s9b8IYtQ4Po1prBUEppiG1jpvEdyHmYEGXHhUfWjLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
 </html>
