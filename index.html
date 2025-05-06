@@ -15,7 +15,6 @@
             font-family: 'Inter', sans-serif;
             background-color: #111111; /* Dark background */
             color: #E5E7EB; /* Light gray text */
-            /* Removed padding-top as header is removed */
         }
         .gold-text {
             color: #DAA520; /* Gold color */
@@ -24,7 +23,7 @@
             background-color: #DAA520; /* Gold color */
         }
         .gold-border {
-            border-color: #DAA520; /* Kept for testimonials, removed from hero image */
+            border-color: #DAA520; /* Kept for testimonials */
         }
         .cta-button {
             transition: all 0.3s ease;
@@ -51,6 +50,12 @@
              object-fit: contain; /* Contain ensures the whole image fits */
              object-position: center; /* Center the image */
         }
+        /* Logo style - Increased size */
+        .hero-logo {
+            max-width: 280px; /* Increased logo size */
+            height: auto;
+            margin-bottom: 1.5rem; /* Space below logo */
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -58,8 +63,10 @@
     <section class="hero-gradient py-16 md:py-24 rounded-b-lg">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-2/5 text-center md:text-left">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-4 gold-text leading-tight">
+                <div class="md:w-2/5 text-center md:text-left flex flex-col items-center md:items-start">
+                    <img src="https://i.ibb.co/SXySv4Jh/1.png" alt="Logo Marketing Jurídico" class="hero-logo" onerror="this.style.display='none'">
+
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-black mb-4 gold-text leading-tight">
                         Domine o Marketing Jurídico e Atraia os Clientes que Você Merece
                     </h1>
                     <p class="text-lg md:text-xl mb-8 text-gray-300">
@@ -208,5 +215,5 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsHo3IGjewCHJfP6dMNNvdDPZdw4s9b8IYtQ4Po1prBUEppiG1jpvEdyHmYEGXHhUfWjLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    </body>
+</body>
 </html>
